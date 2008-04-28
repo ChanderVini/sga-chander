@@ -5,10 +5,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Login</title>cc
+        <script type="text/javascript">
+            function setAction (actionuri) {
+                document.forms[0].action = actionuri;
+            }
+        </script>
+        <title>Login</title>
     </head>
     <body>
-        <form name="login" action="login">
+        <form name="login" action="ecom-myebay/authenticate" method="POST">
             <table>
                 <tr>
                     <td>
@@ -23,12 +28,13 @@
                         Password
                     </td>
                     <td>
-                        <input type="password" name="pass">
+                        <input type="password" name="userpassword">
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                        <input type="submit">
+                    <td colspan="2" align="center">
+                        <input type="submit" name="submit" value="Login">
+                        <input type="submit" name="reset" value="Clear" onclick="javascript:setAction('ecom-myebay/login')">
                     </td>
                 </tr>
             </table>

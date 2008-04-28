@@ -1,0 +1,38 @@
+<!-- 
+    Document   : logout_temp
+    Created on : Apr 1, 2008, 4:14:30 PM
+    Author     : csingh
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <META http-equiv="Refresh" content="5;URL=category">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css"/>  
+    <script type="text/javascript">
+        var timeval = 5;
+        function updateTimer () {
+            timeval--;
+            document.getElementById ('tm').innerHTML = timeval;
+            setTimeout("updateTimer()", 1000);
+        }
+        
+        function startTimer() {
+           var ele = document.getElementById ('tm');
+           ele.innerHTML = timeval;
+           setTimeout("updateTimer()", 1000);
+        }
+    </script>
+  </head>
+  <body onload="javascript:startTimer()">
+        <table class="normalTable" width="100%" align="center">
+            <tr class="normalTR">
+                <td height="200" valign="center" align="center">
+                    Logging out. You will be re-directed in <span id="tm">5</span> seconds.<br><br>
+                    <img src="../images/progressBarLong.gif" width="200px" height="20px">
+                </td>
+            </tr>
+        </table>
+  </body>
+</html>

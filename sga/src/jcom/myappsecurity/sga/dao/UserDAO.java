@@ -1,4 +1,4 @@
-package com.myappsecurity.sga.dao;
+package jcom.myappsecurity.sga.dao;
 
 import com.myappsecurity.sga.vo.UserVO;
 import com.myappsecurity.sga.util.DbConnection;

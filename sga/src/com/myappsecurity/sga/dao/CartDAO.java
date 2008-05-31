@@ -1,4 +1,4 @@
-package jcom.myappsecurity.sga.dao;
+package com.myappsecurity.sga.dao;
 
 import com.myappsecurity.sga.vo.ShoppingCartVO;
 import com.myappsecurity.sga.util.DbConnection;

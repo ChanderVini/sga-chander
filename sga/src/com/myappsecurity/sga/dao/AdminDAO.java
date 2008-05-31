@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package jcom.myappsecurity.sga.dao;
+package com.myappsecurity.sga.dao;
 
 import com.myappsecurity.sga.util.DbConnection;
 import com.myappsecurity.sga.vo.AdminVO;
